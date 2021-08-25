@@ -29,11 +29,9 @@ Sidebar stuff
         width: calc(20% - 2rem);
         margin-top: 1rem;
         text-align: center;
+		display: block;
     }
-    aside {
-        display: block;
-    }
-    .verticalads {
+	#main > .aside {
         display: block;
     }
 	#main > .sidebar > li {
