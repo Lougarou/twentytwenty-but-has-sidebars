@@ -1,0 +1,88 @@
+/*
+ Theme Name:   Twenty Twenty Child
+ Theme URI:    https://everythingtech.dev/
+ Description:  Twenty Twenty Child Theme
+ Author:       Lokhesh Ujhoodha
+ Author URI:   https://github.com/lougarou
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwentychild
+*/
+
+/*
+Sidebar stuff
+*/
+@media only screen and (min-width: 1280px) {
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .single .main-content {
+        width: 60%;
+    }
+    #main > .sidebar {
+        padding-top: calc(1rem * 1.5);
+        width: calc(20% - 2rem);
+        margin-top: 1rem;
+        text-align: center;
+    }
+    aside {
+        display: block;
+    }
+    .verticalads {
+        display: block;
+    }
+	#main > .sidebar > li {
+		list-style-type: none;
+	}
+}
+@media only screen and (max-width: 1279px) {
+    #main > .sidebar {
+        display: none;
+    }
+}
+.wp-block-code {
+	background-color: white !important;
+}
+p {
+	font-family: "trebuchet ms", verdana, helvetica, arial, sans-serif;	
+}
+/*
+Core Web Vitals
+*/
+@media only screen and (max-width: 1024px) {
+	a {
+	font-size: 1.5em !important;
+	padding: 1em;
+	}
+	input {
+		padding: 1em !important;
+	}
+	.meta-text {
+	font-size: 3rem!important;
+	}
+
+	time {
+		font-size: 1.5em!important;
+	}
+
+	.ancestor-wrapper {
+		padding: 1em;
+	}
+	.entry-categories {
+		display: none;
+	}
+	.wp-block-code {
+	font-size: 1.5em;
+	}
+	p {
+		font-size: 1.5em!important;
+	}
+}
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 90rem !important;
+}
